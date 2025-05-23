@@ -1,0 +1,26 @@
+git branch 
+git checkout : to create a sub branch 
+	eg- git checkout -b (new branch name)
+ to enter into the new branch 
+ 	git  switch (name of branch)
+ to delete a branch 
+	git branch -D (branch name)
+
+
+#When you delete a file or directory locally, Git doesn’t know about it until you tell Git and then push the change. So if you deleted a folder locally, but haven’t committed and pushed the deletion, GitHub won’t reflect that change.
+
+#To remove the directory from the GitHub repository:
+#Check the status (you'll see deleted files listed):
+git status
+
+#Stage the deletion:
+git add -A
+#The -A flag stages deletions, modifications, and additions.
+
+#Commit the change:
+git commit -m "Delete directory"
+
+#Push the changes to GitHub:
+git push
+
+#Once you push the commit, the directory should be removed from GitHub
